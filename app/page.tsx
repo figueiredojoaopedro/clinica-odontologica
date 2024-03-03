@@ -1,11 +1,15 @@
 import Image from "next/image";
-// import Navbar from "./components/navbar";
+import Navbar from "./components/navbar/navbar";
 
 export default function Home() {
   return (
-    <main className="">
-      {/* <Navbar></Navbar> */}
-      <h1>Teste</h1>
-    </main>
+    <>
+      <header>
+        <Navbar></Navbar>
+      </header>
+      <main className="">
+        <h1>Nice to meet you!</h1>
+      </main>
+    </>
   );
 }
