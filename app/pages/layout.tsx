@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar/navbar";
+import Header from "../components/header/Header"
 
 export default function PagesLayout({
   children,
@@ -7,7 +7,7 @@ export default function PagesLayout({
 }) {
   return (
     <>
-      <Navbar></Navbar>
+    <Header/>
       <section>{children}</section>
     </>
   );
