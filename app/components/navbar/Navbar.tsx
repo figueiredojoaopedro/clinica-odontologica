@@ -1,7 +1,7 @@
 /*use client*/
 import React from "react";
 import Image from "next/image";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import ItemMenu from "../../components/itemMenu";
 import IconUser from "../../assets/icon-user.svg"
 
@@ -12,7 +12,7 @@ const NavBar = () => {
               
                 <div className="w-full max-w-[1246px] px-[15px] mx-auto">
                     <div className="flex items-center gap-14">
-                        <Image src={Logo} alt="Logo" />
+                        <Image src={Logo} alt="Logo" width={98} height={20} />
                         
                         <ul className="flex items-center gap-12 pl-40">
                             <li><ItemMenu nome="Inicio" /></li>
