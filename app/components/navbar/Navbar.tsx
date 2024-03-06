@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="shadow shadow-slate-500 px-8 py-1 flex flex-row justify-between items-center bg-green-300 text-black">
+      <nav className="shadow shadow-slate-500 px-8 py-1 flex flex-row justify-between items-center bg-gray-800 text-black">
         <div className="cursor-pointer w-16 px-3 py-1 hover:scale-105 transition duration-300 ease-in-out">
           <Image className="w-full" src={Logo} alt="Logo" />
         </div>
