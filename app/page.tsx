@@ -9,7 +9,6 @@ export default function Home() {
     <>
     <NavBar></NavBar>
         <Image className="w-full z-0" src={fundo} alt="fundo"></Image>
-
     </>
   );
 } 
