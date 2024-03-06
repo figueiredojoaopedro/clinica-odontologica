@@ -1,4 +1,5 @@
-import Header from "../components/header/Header"
+import React from "react";
+import NavBar from "../components/navbar/Navbar";
 
 export default function PagesLayout({
   children,
@@ -7,7 +8,7 @@ export default function PagesLayout({
 }) {
   return (
     <>
-    <Header/>
+      <NavBar></NavBar>
       <section>{children}</section>
     </>
   );

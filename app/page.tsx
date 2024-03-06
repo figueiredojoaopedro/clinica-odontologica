@@ -1,13 +1,10 @@
 import Image from "next/image";
-import Langding from '@/app/pages/lang-page/langding';
-
+import LandingPage from "@/app/pages/ladingpage/landingpage";
 
 export default function Home() {
   return (
     <>
-      <Langding></Langding>
-      
+      <LandingPage></LandingPage>
     </>
   );
 }
-
