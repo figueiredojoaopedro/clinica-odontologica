@@ -2,16 +2,9 @@ import Image from "next/image";
 import NavBar from "./components/navbar/Navbar";
 import fundo from "./assets/fundo.jpg";
 import Footer from "./components/footer/footer";
-import ImgZap from "./assets/imgZap.png";
-import ImgGogle from "./assets/btn-google-play.svg";
 import ImgOdonto from "./assets/odonto.png";
-import { ReactNode } from "react";
 
-type Props = {
-  children: ReactNode;
-};
-
-export default function Home({ children }: Props) {
+export default function Home() {
   return (
     <>
       <NavBar />
@@ -77,19 +70,15 @@ export default function Home({ children }: Props) {
             </button>
           </div>
           <div>
-
             <Image
               className="rounded-lg"
               src={ImgOdonto}
               alt="Img odonto"
               width={450}
               height={500}
-
-
               objectFit="cover"
               style={{ opacity: "0.90", marginLeft: "-80px" }}
             />
-
           </div>
         </div>
       </div>
