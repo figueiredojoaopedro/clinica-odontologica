@@ -1,5 +1,4 @@
 import Image from "next/image";
-<<<<<<< HEAD
 import NavBar from "./components/navbar/Navbar";
 import fundo from "./assets/fundo.jpg";
 import Footer from "./components/footer/footer";
@@ -95,17 +94,6 @@ export default function Home({ children }: Props) {
         </div>
       </div>
       <Footer />
-=======
-// import LandingPage from "@/app/pages/ladingpage/page";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/footer";
-
-export default function Home() {
-  return (
-    <>
-      <Navbar></Navbar>
-      <Footer></Footer>
->>>>>>> 2a0e6df83e57011df3589fc216aeae8dace6eac0
     </>
   );
 }
