@@ -2,7 +2,7 @@ import Image from "next/image";
 import NavBar from "./components/navbar/Navbar";
 import fundo from "./assets/fundo.jpg";
 import Footer from "./components/footer/footer";
-import ImgStore from "./assets/btn-apple-store.svg";
+import ImgZap from "./assets/imgZap.png";
 import ImgGogle from "./assets/btn-google-play.svg";
 import ImgOdonto from "./assets/odonto.png";
 import { ReactNode } from "react";
@@ -35,11 +35,11 @@ export default function Home({ children }: Props) {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <button>
-                <Image src={ImgStore} alt="App Store" />
+              <button className="border-2 border-black bg-transparent text-white px-4 py-2 rounded">
+                <span>Marcar consulta</span>
               </button>
-              <button>
-                <Image src={ImgGogle} alt="Google Play" />
+              <button className="border-2 border-black bg-transparent text-white px-4 py-2 rounded">
+                <span>Entrar em contato</span>
               </button>
             </div>
             <button className="flex items-center mt-4 space-x-3">
@@ -77,18 +77,18 @@ export default function Home({ children }: Props) {
             </button>
           </div>
           <div>
-            
-          <Image
-    className="rounded-lg"
-    src={ImgOdonto}
-    alt="Img odonto"
-    width={450}
-    height={500}
-    
-   
-    objectFit="cover"
-    style={{ opacity: "0.90", marginLeft: "-80px" }} 
-    />
+
+            <Image
+              className="rounded-lg"
+              src={ImgOdonto}
+              alt="Img odonto"
+              width={450}
+              height={500}
+
+
+              objectFit="cover"
+              style={{ opacity: "0.90", marginLeft: "-80px" }}
+            />
 
           </div>
         </div>
