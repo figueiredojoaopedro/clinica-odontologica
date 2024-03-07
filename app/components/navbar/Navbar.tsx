@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "../../assets/logo.png";
 import ItemMenu from "./itemMenu";
 
-const NavBar = () => {
+const Navbar = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   return (
@@ -14,30 +14,29 @@ const NavBar = () => {
         <div className="cursor-pointer w-16 px-3 py-1 hover:scale-105 transition duration-300 ease-in-out">
           <Image className="w-full" src={Logo} alt="Logo" />
         </div>
-        <div className="flex items-center gap-14">
-          <ul className="flex items-center gap-12">
-            <li></li>
+        <div>
+          <ul className="flex items-center gap-12 text-white font-bold">
             <li>
-              <ItemMenu nome="Marcar consulta" />
+              <Link href="/pages/marcarconsulta">Marcar consulta</Link>
             </li>
             <li>
-              <ItemMenu nome="Para você" />
+              <Link href="/pages/paravoce">Para você</Link>
             </li>
             <li>
-              <ItemMenu nome="Sobre-nos" />
+              <Link href="/pages/sobrenos">Sobre nós</Link>
             </li>
           </ul>
         </div>
         <div>
-          <div className="cursor-pointer px-3 py-1 bg-teal-500 hover:bg-teal-700 transition duration-300 ease-in-out text-white rounded-md">
-            <Link href="/pages/login">
+          <Link href="/pages/login">
+            <div className="cursor-pointer px-3 py-1 bg-teal-500 hover:bg-teal-700 transition duration-300 ease-in-out text-white rounded-md">
               {isSignedIn ? "Sign Out" : "Sign In"}
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </nav>
     </header>
   );
 };
 
-export default NavBar;
+export default Navbar;
