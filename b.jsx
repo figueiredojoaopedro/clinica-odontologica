@@ -1,1 +1,0 @@
-import sla from "./app/assets/img_section1.jpg"

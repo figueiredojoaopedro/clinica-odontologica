@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -7,7 +7,8 @@ const Footer = () => {
         <div className="w-full md:w-1/3 text-center md:text-left mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Fulano</h2>
           <p className="text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+            ipsum eu nunc commodo posuere et sit amet ligula.
           </p>
         </div>
         <div className="w-full md:w-2/3">
@@ -17,12 +18,18 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-2">Contatos</h3>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="tel:+5511951294471" className="text-white hover:text-gray-200">
+                  <a
+                    href="tel:+5511951294471"
+                    className="text-white hover:text-gray-200"
+                  >
                     Telefone: +55 xx xxxxx-xxxx
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="mailto:fulano@gmail.com" className="text-white hover:text-gray-200">
+                  <a
+                    href="mailto:fulano@gmail.com"
+                    className="text-white hover:text-gray-200"
+                  >
                     Email: fulano@gmail.com
                   </a>
                 </li>
@@ -72,22 +79,22 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="border-t border-gray-700 py-8">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <p className="text-center md:text-left mb-4 md:mb-0 text-gray-400">
-            Copyright 2023 |  - todos direitos reservados.
+            Copyright 2023 | - todos direitos reservados.
           </p>
           <p className="text-center md:text-left text-gray-400">
-            Desenvolvido por kapela isaac e Joao figuereiro
+            Desenvolvido por kapela isaac e João Pedro de Figueiredo
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
